@@ -1,26 +1,26 @@
 # Method 1
-# final:
-# 	gcc calc.c operation.c -o final
+# calc:
+# 	gcc calc.c operation.c -o calc
 
 
 # Method 2 using variables
 # $(CC)=gcc
-# final:
-# 	$(CC) calc.c operation.c -o final
+# calc:
+# 	$(CC) calc.c operation.c -o calc
 
 # clean:
-# 	rm final
+# 	rm calc
 
 # Method 3
 $(CC)=gcc
-final: calc.o operation.o
-	$(CC) calc.o operation.o -o final
+calc: calc.o operation.o
+	$(CC) calc.o operation.o -o calc
 
-calc.o: calc.c header.h
+calc.o: calc.c operation.h
 	$(CC) -c calc.c
 
-operation.o: operation.c header.h
+operation.o: operation.c operation.h
 	$(CC) -c operation.c
 
 clean:
-	rm *.o final
+	rm *.o calc

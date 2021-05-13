@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include "header.h"
+#include "operation.h"
 
 void operation(int a,char c,int b){
 
