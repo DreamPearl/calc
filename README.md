@@ -1,3 +1,4 @@
-# calc-2
+# Calculator
+[![C/C++ CI](https://github.com/DreamPearl/calc/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/DreamPearl/calc/actions/workflows/c-cpp.yml)
 
-A simple "Makefile" for a basic program of calculation.
+A simple calculator build using Makefile.
