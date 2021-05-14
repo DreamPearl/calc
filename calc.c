@@ -11,7 +11,7 @@ void main() {
 	scanf("%f",&a);
 	scanf(" %c",&c);
 	scanf("%f",&b);
-    operation(a,c,b);
+    operation(a,c);
  printf("do you want to continue\n");
  scanf(" %c",&s);
  printf("your input was %c",s);
